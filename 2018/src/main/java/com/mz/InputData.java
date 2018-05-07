@@ -51,9 +51,7 @@ public class InputData {
     }
 
     private void initCityPlan(int rows, int cols, int walkingDist, int projects) {
-        cityPlan = new CityPlan();
-        cityPlan.rows = rows;
-        cityPlan.cols = cols;
+        cityPlan = new CityPlan(rows, cols);
         cityPlan.maxWalkingDistance = walkingDist;
         cityPlan.numberOfProjects = projects;
     }
